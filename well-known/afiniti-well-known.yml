@@ -1,0 +1,60 @@
+generated: '2026-08-06'
+method: probed
+source: live GET against the only reachable Afiniti host
+host: https://www.afiniti.com
+note: >-
+  api., apis., dev., developer., docs., link. and partners.afiniti.com are all
+  NXDOMAIN. The only Afiniti hosts that resolve are www.afiniti.com, the SafeBase
+  trust portal at trust.afiniti.com, and the ASP.NET customer portal at
+  portal.afiniti.com (afiniti.io and afiniti.ai both 301 to www). Every
+  /.well-known/ path below returned a 404 with an HTML body on both www and portal —
+  no discovery document of any kind is published. Recorded as evidence; no WellKnown
+  pointer is wired in apis.yml because nothing was found.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /.well-known/mcp.json
+  status: 404
+- path: /.well-known/agent-card.json
+  status: 404
+- path: /.well-known/agent.json
+  status: 404
+second_host:
+  host: https://portal.afiniti.com
+  documents:
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /openapi.json
+    status: 404
+  - path: /swagger.json
+    status: 404
+  - path: /swagger/v1/swagger.json
+    status: 404
+  - path: /api-docs
+    status: 404
+  - path: /AfinitiPortal/Login.aspx
+    status: 200
+    note: the portal root 0-second-refreshes here; login wall, no anonymous surface
+other_roots:
+- path: /llms.txt
+  status: 200
+  file: ../llms/afiniti-llms.txt
+  note: All in One SEO Pro generated site index, not an API/docs index
+- path: /robots.txt
+  status: 200
+  note: explicitly allows OAI-SearchBot, PerplexityBot and ClaudeBot
+- path: /sitemap.xml
+  status: 200
+  note: 124 URLs, none of them developer or API reference pages

@@ -1,10 +1,22 @@
 aid: afiniti
 name: Afiniti
-description: 'Afiniti is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Afiniti is an enterprise contact center AI company whose patented behavioral
+  pairing technology matches inbound customers with the agent most likely to produce
+  a desired business outcome, measured against a continuously alternating ON/OFF control
+  benchmark. In 2026 the company extended pairing into what it calls Outcome Orchestration,
+  a unified AI decisioning platform spanning four products: Afiniti Pairing, Afiniti
+  Orchestrator, Afiniti Intelligence and Afiniti Agents. Afiniti sits as a decisioning
+  layer above existing CCaaS, ACD, IVR/IVA, CRM and workforce platforms rather than
+  replacing them, and is deployed at telco, financial services, insurance, healthcare
+  and travel/hospitality enterprises. Integration reaches customers through host platform
+  ecosystems (Genesys AppFoundry, NICE CXexchange/DEVone, Five9) and through the Afiniti
+  Link partner program, which advertises APIs and SDKs to certified partners but publishes
+  no public developer portal, API reference, or machine-readable specification.'
+image: https://www.afiniti.com/wp-content/uploads/2023/08/Logo-blue.svg
 url: https://raw.githubusercontent.com/api-evangelist/afiniti/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
+x-harvest-source-url: https://forgeglobal.com/afiniti_stock/
 x-tier: stub
 x-tier-reason: harvest
 specificationVersion: '0.20'
@@ -12,6 +24,13 @@ created: '2026-08-06'
 modified: '2026-08-06'
 tags:
 - Company
+- Artificial Intelligence
+- Contact Center
+- Customer Experience
+- Machine Learning
+- Enterprise AI
+- Call Routing
+- CCaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +39,81 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
+  url: https://www.afiniti.com/
+- type: About
+  url: https://www.afiniti.com/about-us/
+- type: Products
+  url: https://www.afiniti.com/products/
+- type: Partners
+  name: Afiniti Link partner integration program
+  url: https://www.afiniti.com/afiniti-link/
+- type: Blog
+  url: https://www.afiniti.com/blogs/
+- type: BlogRSS
+  url: https://www.afiniti.com/feed/
+- type: News
+  url: https://www.afiniti.com/news/
+- type: Support
+  name: Contact Afiniti
+  url: https://www.afiniti.com/contact/
+- type: SignUp
+  name: Book a demo
+  url: https://www.afiniti.com/book-a-demo/
+- type: Login
+  name: Afiniti customer portal (ASP.NET login — not a developer portal)
+  url: https://portal.afiniti.com/AfinitiPortal/Login.aspx
+- type: TrustCenter
+  name: Afiniti Trust Center (SafeBase)
+  url: https://trust.afiniti.com/
+- type: TrustCenter
+  url: security/afiniti-trust-center.yml
+- type: Compliance
+  name: Trust at Afiniti — certifications and compliance program
+  url: https://www.afiniti.com/trust-center/
+- type: Legal
+  url: https://www.afiniti.com/legal/
+- type: PrivacyPolicy
+  url: https://www.afiniti.com/legal/privacy-policy/
+- type: CodeOfConduct
+  url: https://www.afiniti.com/legal/code-of-conduct/
+- type: Patents
+  url: https://www.afiniti.com/legal/patents/
+- type: Careers
+  url: https://www.afiniti.com/careers/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/afiniti-com
+- type: YouTube
+  url: https://www.youtube.com/@afinitiai
+- type: Facebook
+  url: https://www.facebook.com/afinitiai
+- type: SecondaryMarket
   url: https://forgeglobal.com/afiniti_stock/
+- type: LLMsTxt
+  url: llms/afiniti-llms.txt
+- type: Packages
+  url: packages/afiniti-packages.yml
+- type: DomainSecurity
+  url: security/afiniti-domain-security.yml
+x-enrichment:
+  date: '2026-08-06'
+  status: minimal
+  artifacts_added: 5
+  pass: local-v1
+x-coverage:
+  state: gated
+  reason: sales-gate
+  detail: >-
+    Afiniti's only developer-facing page, Afiniti Link, advertises "APIs, SDKs,
+    documentation and service delivery bootcamps" but ships them exclusively through a
+    "Join Afiniti Link" partner-certification form — there is no reference, no spec,
+    and no api./docs./developer.afiniti.com host in DNS at all.
+  evidence:
+  - url: https://www.afiniti.com/afiniti-link/
+    status: 200
+  - url: https://www.afiniti.com/openapi.json
+    status: 410
+  - url: https://www.afiniti.com/.well-known/agent-card.json
+    status: 404
+  - url: https://portal.afiniti.com/AfinitiPortal/Login.aspx
+    status: 200
+  checked: '2026-08-06'

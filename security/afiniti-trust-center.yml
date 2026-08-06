@@ -1,0 +1,60 @@
+generated: '2026-08-06'
+method: searched
+probe: true
+source: https://www.afiniti.com/trust-center/
+url: https://trust.afiniti.com/
+platform: SafeBase
+summary: >-
+  Afiniti runs a hosted trust portal at trust.afiniti.com (SafeBase) plus a public
+  marketing-side "Trust at Afiniti" page enumerating its certifications. The portal
+  hosts the security documentation, data processing policies, compliance reports and
+  audit materials; the certification list below was read from the public page.
+certifications:
+- name: SOC 2 Type 2
+  evidence: https://www.afiniti.com/trust-center/
+  note: independent audit of security and organizational controls
+- name: HITRUST
+  evidence: https://www.afiniti.com/trust-center/
+  note: supplemental certification for healthcare environments, held alongside SOC 2
+- name: SOC 3
+  evidence: https://www.afiniti.com/trust-center/
+  note: publicly available report
+- name: ISO/IEC 27001
+  evidence: https://www.afiniti.com/trust-center/
+  note: information security management
+- name: ISO/IEC 27701
+  evidence: https://www.afiniti.com/trust-center/
+  note: privacy information management
+- name: GDPR
+  evidence: https://www.afiniti.com/trust-center/
+- name: CCPA
+  evidence: https://www.afiniti.com/trust-center/
+- name: EcoVadis
+  evidence: https://www.afiniti.com/trust-center/
+  note: ESG / sustainable procurement rating, not a security certification
+programs:
+- name: Responsible AI
+  url: https://www.afiniti.com/responsible-ai/
+  note: published principles covering transparency, explainability, fairness, data
+    protection, accountability and compliance
+- name: Data Processing Addendum
+  url: https://www.afiniti.com/legal/afiniti-data-processing-addendum/
+not_found:
+- PCI DSS
+- HIPAA (as a named certification; HITRUST supplemental is claimed instead)
+- FedRAMP
+evidence:
+- source: https://www.afiniti.com/trust-center/
+  http_status: 200
+  keywords:
+  - soc 2
+  - soc 3
+  - hitrust
+  - iso/iec 27001
+  - iso/iec 27701
+  - gdpr
+  - ccpa
+  - ecovadis
+- source: https://trust.afiniti.com/
+  http_status: 200
+  note: SafeBase-hosted trust portal

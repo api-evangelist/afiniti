@@ -1,0 +1,110 @@
+generated: '2026-08-06'
+method: searched
+source: https://registry.npmjs.org/-/v1/search?text=afiniti
+summary: >-
+  Afiniti publishes no public API client libraries. The only first-party packages
+  found on any registry are the @afiniti npm scope — React presentation components
+  built for the company's own marketing site and video learning environment, sourced
+  from a private-facing gitlab.com/afiniti group. They are recorded here because they
+  are genuinely first-party, but they are NOT API SDKs: no `SDKs` pointer is wired in
+  apis.yml, because none of these wrap an Afiniti API. The SDKs the Afiniti Link
+  partner page advertises are not published to any public registry.
+packages:
+- language: javascript
+  registry: npm
+  name: "@afiniti/design-system-2021"
+  url: https://www.npmjs.com/package/@afiniti/design-system-2021
+  install: npm install @afiniti/design-system-2021
+  version: 1.2.11
+  published: '2022-09-01'
+  official: true
+  kind: ui-component
+  api_client: false
+- language: javascript
+  registry: npm
+  name: "@afiniti/design-system"
+  url: https://www.npmjs.com/package/@afiniti/design-system
+  install: npm install @afiniti/design-system
+  version: 1.1.2
+  published: '2021-11-19'
+  repository: https://gitlab.com/afiniti/design-system-v1
+  official: true
+  kind: ui-component
+  api_client: false
+- language: javascript
+  registry: npm
+  name: "@afiniti/video-player"
+  url: https://www.npmjs.com/package/@afiniti/video-player
+  install: npm install @afiniti/video-player
+  version: 4.0.7
+  published: '2022-07-04'
+  repository: https://gitlab.com/afiniti/video-player
+  description: React component for Afiniti's Video Learning Environment
+  official: true
+  kind: ui-component
+  api_client: false
+- language: javascript
+  registry: npm
+  name: "@afiniti/video-player-lite"
+  url: https://www.npmjs.com/package/@afiniti/video-player-lite
+  version: 0.1.2
+  published: '2022-01-12'
+  official: true
+  kind: ui-component
+  api_client: false
+- language: javascript
+  registry: npm
+  name: "@afiniti/parallax-slider"
+  url: https://www.npmjs.com/package/@afiniti/parallax-slider
+  version: 2.0.3
+  published: '2022-07-07'
+  official: true
+  kind: ui-component
+  api_client: false
+- language: javascript
+  registry: npm
+  name: "@afiniti/webgl-slider"
+  url: https://www.npmjs.com/package/@afiniti/webgl-slider
+  version: 0.0.4
+  published: '2021-05-24'
+  official: true
+  kind: ui-component
+  api_client: false
+- language: javascript
+  registry: npm
+  name: "@afiniti/image-lazy-load"
+  url: https://www.npmjs.com/package/@afiniti/image-lazy-load
+  version: 0.0.9
+  published: '2022-04-01'
+  official: true
+  kind: ui-component
+  api_client: false
+- language: javascript
+  registry: npm
+  name: "@afiniti/footer"
+  url: https://www.npmjs.com/package/@afiniti/footer
+  version: 0.2.2
+  published: '2021-11-19'
+  repository: https://gitlab.com/afiniti/footer
+  official: true
+  kind: ui-component
+  api_client: false
+registries_checked:
+- registry: npm
+  result: 10 first-party @afiniti/* scoped packages, all UI components, none newer
+    than 2022-09
+- registry: pypi
+  result: 404 for afiniti
+- registry: rubygems
+  result: 404 for afiniti
+- registry: maven-central
+  result: 0 results for afiniti
+- registry: crates.io
+  result: 403 to the anonymous probe; no afiniti crate surfaced in search
+- registry: nuget
+  result: not checked — no .NET surface advertised anywhere on the site
+notes:
+- gitlab.com/afiniti is not a public group (GitLab API returns 404 Group Not Found),
+  so the repositories behind these packages are not browsable.
+- github.com/afiniti does not exist (GitHub API 404); no GitHubOrganization pointer
+  is wired.
