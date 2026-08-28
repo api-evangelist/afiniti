@@ -12,6 +12,17 @@ description: 'Afiniti is an enterprise contact center AI company whose patented 
   ecosystems (Genesys AppFoundry, NICE CXexchange/DEVone, Five9) and through the Afiniti
   Link partner program, which advertises APIs and SDKs to certified partners but publishes
   no public developer portal, API reference, or machine-readable specification.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://www.afiniti.com/wp-content/uploads/2023/08/Logo-blue.svg
 url: https://raw.githubusercontent.com/api-evangelist/afiniti/refs/heads/main/apis.yml
 x-type: company
