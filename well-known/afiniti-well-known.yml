@@ -2,31 +2,12 @@ generated: '2026-08-06'
 method: probed
 source: live GET against the only reachable Afiniti host
 host: https://www.afiniti.com
-note: >-
-  api., apis., dev., developer., docs., link. and partners.afiniti.com are all
-  NXDOMAIN. The only Afiniti hosts that resolve are www.afiniti.com, the SafeBase
-  trust portal at trust.afiniti.com, and the ASP.NET customer portal at
-  portal.afiniti.com (afiniti.io and afiniti.ai both 301 to www). Every
-  /.well-known/ path below returned a 404 with an HTML body on both www and portal —
-  no discovery document of any kind is published. Recorded as evidence; no WellKnown
-  pointer is wired in apis.yml because nothing was found.
-documents:
-- path: /.well-known/security.txt
-  status: 404
-- path: /.well-known/openid-configuration
-  status: 404
-- path: /.well-known/oauth-authorization-server
-  status: 404
-- path: /.well-known/api-catalog
-  status: 404
-- path: /.well-known/ai-plugin.json
-  status: 404
-- path: /.well-known/mcp.json
-  status: 404
-- path: /.well-known/agent-card.json
-  status: 404
-- path: /.well-known/agent.json
-  status: 404
+note: api., apis., dev., developer., docs., link. and partners.afiniti.com are all NXDOMAIN. The only
+  Afiniti hosts that resolve are www.afiniti.com, the SafeBase trust portal at trust.afiniti.com, and
+  the ASP.NET customer portal at portal.afiniti.com (afiniti.io and afiniti.ai both 301 to www). Every
+  /.well-known/ path below returned a 404 with an HTML body on both www and portal — no discovery document
+  of any kind is published. Recorded as evidence; no WellKnown pointer is wired in apis.yml because nothing
+  was found.
 second_host:
   host: https://portal.afiniti.com
   documents:
@@ -58,3 +39,27 @@ other_roots:
 - path: /sitemap.xml
   status: 200
   note: 124 URLs, none of them developer or API reference pages
+hosts:
+- host: https://www.afiniti.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/mcp.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
