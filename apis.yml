@@ -50,7 +50,7 @@ tags:
 - Artificial Intelligence
 - Contact Center
 - Customer Experience
-- Machine-Learning
+- Machine Learning
 - Enterprise AI
 - Call Routing
 - CCaaS
@@ -63,6 +63,7 @@ tags_raw:
 - Enterprise AI
 - Call Routing
 - CCaaS
+- Machine-Learning
 apis: []
 maintainers:
 - FN: Kin Lane
