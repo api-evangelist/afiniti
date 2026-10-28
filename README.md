@@ -64,5 +64,86 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Afiniti is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/afiniti_stock/
+Afiniti is an enterprise contact center AI company whose patented behavioral pairing technology matches inbound customers with the agent most likely to produce a desired business outcome, measured against a continuously alternating ON/OFF control benchmark. In 2026 the company extended pairing into what it calls Outcome Orchestration, a unified AI decisioning platform spanning four products: Afiniti Pairing, Afiniti Orchestrator, Afiniti Intelligence and Afiniti Agents. Afiniti sits as a decisioning layer above existing CCaaS, ACD, IVR/IVA, CRM and workforce platforms rather than replacing them, and is deployed at telco, financial services, insurance, healthcare and travel/hospitality enterprises. Integration reaches customers through host platform ecosystems (Genesys AppFoundry, NICE CXexchange/DEVone, Five9) and through the Afiniti Link partner program, which advertises APIs and SDKs to certified partners but publishes no public developer portal, API reference, or machine-readable specification.
+
+**Areas:** Company · Artificial Intelligence · Contact Center · Customer Experience · Machine Learning · Enterprise AI · Call Routing · CCaaS
+
+## Afiniti on APIs.io
+
+Everything profiled for Afiniti is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/afiniti/](https://apis.io/providers/afiniti/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Afiniti Domain Security](https://apis.io/security/afiniti/afiniti-domain-security/)
+- [Afiniti Trust Center](https://apis.io/security/afiniti/afiniti-trust-center/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.afiniti.com/)
+- [Sign up](https://www.afiniti.com/book-a-demo/)
+- [Support](https://www.afiniti.com/contact/)
+- [Blog](https://www.afiniti.com/blogs/)
+- [Compliance](https://www.afiniti.com/trust-center/)
+- [Trust centre](https://trust.afiniti.com/)
+- [Privacy policy](https://www.afiniti.com/legal/privacy-policy/)
+
+## API Evangelist rating
+
+**Kin Score 14.7** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 56.3 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 39.5 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 13.6** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/afiniti/](https://apis.io/providers/afiniti/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Afiniti: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/afiniti/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
